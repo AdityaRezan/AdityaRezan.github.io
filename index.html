@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aditya Rajeshwar Karn — Engineering Portfolio</title>
+<meta name="description" content="B.Tech engineer building across robotics, power systems, finance, computer science, cybersecurity and blockchain. Projects with real, measurable results.">
+<style>
+  :root{
+    --bg:#0b1020; --bg2:#101830; --card:#151f3a; --line:#22304f;
+    --text:#dce4f5; --muted:#8fa0c2; --accent:#4fd1c5; --accent2:#f6ad55;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+  header{padding:72px 0 48px;background:linear-gradient(180deg,var(--bg2),var(--bg));border-bottom:1px solid var(--line)}
+  h1{font-size:2.4rem;letter-spacing:-.5px}
+  .tagline{color:var(--muted);font-size:1.15rem;margin-top:10px;max-width:640px}
+  .links{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-block;padding:8px 18px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--text);font-size:.95rem}
+  .btn:hover{border-color:var(--accent);text-decoration:none}
+  section{padding:52px 0}
+  h2{font-size:1.5rem;margin-bottom:8px;color:var(--accent)}
+  .sub{color:var(--muted);margin-bottom:28px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:20px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;display:flex;flex-direction:column;gap:10px}
+  .card h3{font-size:1.12rem}
+  .card .domain{font-size:.78rem;letter-spacing:.8px;text-transform:uppercase;color:var(--accent2)}
+  .card p{color:var(--muted);font-size:.95rem;flex-grow:1}
+  .stats{font-size:.85rem;color:var(--text);background:var(--bg2);border-radius:8px;padding:8px 12px;border:1px solid var(--line)}
+  .cardlinks{display:flex;gap:14px;font-size:.9rem}
+  .domains{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px}
+  .domain-pill{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px;text-align:center}
+  .domain-pill b{display:block;font-size:1rem}
+  .domain-pill span{font-size:.82rem;color:var(--muted)}
+  .profiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+  .profile{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .profile b{display:block;margin-bottom:4px}
+  .profile span{font-size:.85rem;color:var(--muted)}
+  .mono{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.8rem;word-break:break-all}
+  footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:.9rem}
+  .badge{display:inline-block;font-size:.72rem;padding:2px 9px;border-radius:20px;border:1px solid var(--accent);color:var(--accent);margin-left:8px;vertical-align:middle}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Aditya Rajeshwar Karn</h1>
+    <p class="tagline">B.Tech engineer building across <b>robotics</b>, <b>power systems</b>, <b>finance</b>, <b>computer science</b>, <b>cybersecurity</b> and <b>blockchain</b> — every project ships with working code and measurable results.</p>
+    <div class="links">
+      <a class="btn" href="https://github.com/AdityaRezan">GitHub</a>
+      <a class="btn" href="https://www.kaggle.com/adityarajeshwarkarn">Kaggle</a>
+      <a class="btn" href="https://sepolia.etherscan.io/address/0x541BdAad99cbcD77281ed23FDC16Ad87BAe7E341">On-chain Registry</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>Domains</h2>
+    <p class="sub">Six tracks, one standard: build it, measure it, publish it.</p>
+    <div class="domains">
+      <div class="domain-pill"><b>🤖 Robotics</b><span>planning · control · simulation</span></div>
+      <div class="domain-pill"><b>⚡ Power Systems</b><span>forecasting · grid analytics</span></div>
+      <div class="domain-pill"><b>📈 Finance</b><span>quant strategies · risk</span></div>
+      <div class="domain-pill"><b>💻 Computer Sci</b><span>algorithms · systems</span></div>
+      <div class="domain-pill"><b>🔐 Cybersecurity</b><span>in progress</span></div>
+      <div class="domain-pill"><b>⛓️ Blockchain</b><span>smart contracts · testnet</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Projects</h2>
+    <p class="sub">Each repo includes a results-driven README and an ABOUT.md explaining every design decision.</p>
+    <div class="grid">
+
+      <div class="card">
+        <span class="domain">Robotics</span>
+        <h3>Auto-Nav-Bot</h3>
+        <p>Autonomous mobile robot navigation: A*, Dijkstra and RRT path planners built from scratch, tracked by a PID-controlled differential-drive robot model.</p>
+        <div class="stats">A* expands ~6× fewer nodes than Dijkstra · mean cross-track error 0.33 cells</div>
+        <div class="cardlinks"><a href="https://github.com/AdityaRezan/auto-nav-bot">Code →</a></div>
+      </div>
+
+      <div class="card">
+        <span class="domain">Power Systems</span>
+        <h3>GridSense</h3>
+        <p>Smart-grid load forecasting and fault anomaly detection on a year of simulated feeder data with labelled faults — plus a published Kaggle dataset.</p>
+        <div class="stats">2.5% MAPE (24h-ahead) · fault detection F1 0.91 at 100% recall</div>
+        <div class="cardlinks">
+          <a href="https://github.com/AdityaRezan/gridsense">Code →</a>
+          <a href="https://www.kaggle.com/datasets/adityarajeshwarkarn/smart-grid-load-labelled-anomalies">Dataset →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="domain">Finance</span>
+        <h3>QuantFolio</h3>
+        <p>Portfolio optimisation (efficient frontier from 20,000 Monte Carlo portfolios), cost-aware strategy backtesting, and VaR/CVaR risk analytics.</p>
+        <div class="stats">Max-Sharpe 0.71 vs 0.43 equal-weight · 5,000-path Monte Carlo risk sim</div>
+        <div class="cardlinks"><a href="https://github.com/AdityaRezan/quantfolio">Code →</a></div>
+      </div>
+
+      <div class="card">
+        <span class="domain">Finance · Live Data</span>
+        <h3>Indian ADR Risk Parity <span class="badge">QuantConnect</span></h3>
+        <p>Monthly-rebalanced inverse-volatility portfolio of six NYSE-listed Indian ADRs with a momentum crash filter — backtested on real market data, 2019–2025, with modelled fees.</p>
+        <div class="stats">+105% net (7y, real data) · 77% win rate · beta 0.55 vs S&amp;P 500</div>
+        <div class="cardlinks"><a href="https://www.quantconnect.com/u/aditya-rajeshwar-karn">QuantConnect →</a></div>
+      </div>
+
+      <div class="card">
+        <span class="domain">Blockchain</span>
+        <h3>ProofOfBuild <span class="badge">Sepolia</span></h3>
+        <p>On-chain project registry: a Solidity contract that notarizes every project in this portfolio with its repo URL, content hash and block timestamp — publicly verifiable by anyone.</p>
+        <div class="stats">Solidity 0.8.24 · deployed &amp; source-verified on Sepolia testnet</div>
+        <div class="cardlinks"><a href="https://sepolia.etherscan.io/address/0x541BdAad99cbcD77281ed23FDC16Ad87BAe7E341">Etherscan →</a></div>
+      </div>
+
+      <div class="card">
+        <span class="domain">Data Science</span>
+        <h3>Smart Grid Dataset + Notebook <span class="badge">Kaggle</span></h3>
+        <p>Published benchmark dataset — a year of hourly feeder load with ground-truth fault labels (rare in public data) — with a companion notebook benchmarking forecasters and detectors.</p>
+        <div class="stats">8,760 labelled hours · 3 fault types · CC0 licensed</div>
+        <div class="cardlinks"><a href="https://www.kaggle.com/code/adityarajeshwarkarn/smart-grid-forecasting-fault-detection">Notebook →</a></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Profiles &amp; Proof</h2>
+    <p class="sub">Wherever possible, results live on platforms where reputation is earned, not claimed.</p>
+    <div class="profiles">
+      <div class="profile"><b>GitHub</b><span><a href="https://github.com/AdityaRezan">github.com/AdityaRezan</a><br>All source code, results and write-ups</span></div>
+      <div class="profile"><b>Kaggle</b><span><a href="https://www.kaggle.com/adityarajeshwarkarn">kaggle.com/adityarajeshwarkarn</a><br>Datasets and executed notebooks</span></div>
+      <div class="profile"><b>QuantConnect</b><span><a href="https://www.quantconnect.com/u/aditya-rajeshwar-karn">quantconnect.com</a><br>Real-data strategy backtests</span></div>
+      <div class="profile"><b>Ethereum Sepolia</b><span class="mono">0x541BdAad99cbcD77281ed23FDC16Ad87BAe7E341</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Aditya Rajeshwar Karn · Chennai, India · This site and every project on it are open source.</p>
+  </div>
+</footer>
+
+</body>
+</html>
